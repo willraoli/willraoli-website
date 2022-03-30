@@ -1,0 +1,10 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  background: linear-gradient(to right, #302b63, #24243e);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
