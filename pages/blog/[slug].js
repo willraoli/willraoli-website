@@ -3,10 +3,14 @@ import path from "path"
 import matter from "gray-matter"
 import { marked } from "marked"
 import Link from "next/link"
+import Head from "next/head"
 
 function PostPage({ frontmatter: { title }, content, slug }) {
   return (
     <>
+      <Head>
+        <title>willraoli@blog</title>
+      </Head>
       <Link href="/">Voltar</Link>
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
