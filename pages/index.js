@@ -23,7 +23,7 @@ export default function Home({ posts }) {
       <aside>
         <div>
           <h1>willraoli</h1>
-          <p>willraoli's website</p>
+          <p>willraoli&#39s website</p>
         </div>
       </aside>
     </div>
