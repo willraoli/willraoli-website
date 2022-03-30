@@ -1,5 +1,4 @@
 import Head from "next/head"
-import styles from "../styles/Home.module.css"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
