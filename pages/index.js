@@ -20,8 +20,12 @@ export default function Home({ posts }) {
           ))}
         </div>
       </main>
-
-      
+      <aside>
+        <div>
+          <h1>willraoli</h1>
+          <p>willraoli's website</p>
+        </div>
+      </aside>
     </div>
   )
 }
