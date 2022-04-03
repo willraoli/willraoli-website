@@ -14,7 +14,8 @@ export default function Home({ posts }) {
         <meta name="description" content="willraoli's website" />
       </Head>
       <header className={styles.header}>Yo soy el cabezador</header>
-      <main className={styles.main}>
+      <main className={`${styles.main} ${styles.wrapper}`}>
+        <h1>Confira meus posts mais recentes</h1>
         <div>
           {posts.map((post) => (
             <Post post={post} key={post.title} />
@@ -23,8 +24,10 @@ export default function Home({ posts }) {
       </main>
       <aside className={styles.aside}>
         <div>
+          <h2>Foto qualquer</h2>
           <h1>William Oliveira</h1>
           <p>Descrição breve</p>
+          <p>Redes sociais</p>
         </div>
       </aside>
       <footer className={styles.footer}>
