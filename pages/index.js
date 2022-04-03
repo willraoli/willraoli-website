@@ -12,9 +12,9 @@ export default function Home({ posts }) {
       <Head>
         <title>willraoli@home</title>
         <meta name="description" content="willraoli's website" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <header className={styles.header}>Yo soy el cabezador</header>
+      <main className={styles.main}>
         <div>
           {posts.map((post) => (
             <Post post={post} key={post.title} />
@@ -40,10 +40,8 @@ export async function getStaticProps() {
   const files = fs.readdirSync(path.join("posts"))
   const posts = files.map((filename) => {
     const slug = filename.replace(".md", "")
-    const markdownWithMeta = fs.readFileSync(
-      path.join("posts", filename),
-      "utf8"
-    )
+    const filepath = path.join("posts", filename)
+    const markdownWithMeta = fs.readFileSync(filepath, "utf8")
 
     const { data: frontmatter } = matter(markdownWithMeta)
 
