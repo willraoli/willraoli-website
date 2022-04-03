@@ -4,7 +4,7 @@
   display: grid;
   grid-template-areas: 
   'header header header'
-  'main main aside'
+  'aside main main'
   'footer footer footer';
 }
 
@@ -59,4 +59,14 @@
 .main {
   background: #ffb8b8;
   grid-area: main;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.description {
+  margin: auto;
+  width: 200px;
+  padding: 10%;
 }

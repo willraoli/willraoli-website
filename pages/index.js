@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Image from "next/image"
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
@@ -23,8 +24,8 @@ export default function Home({ posts }) {
         </div>
       </main>
       <aside className={styles.aside}>
-        <div>
-          <h2>Foto qualquer</h2>
+        <div className={styles.description}>
+          <Image src="/avatar.jpg" className={styles.avatar} width="100" height="100" alt="Profile pic" />
           <h1>William Oliveira</h1>
           <p>Descrição breve</p>
           <p>Redes sociais</p>
