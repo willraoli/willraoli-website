@@ -28,6 +28,7 @@ export default function Home({ posts }) {
           <Image src="/avatar.jpg" className={styles.avatar} width="100" height="100" alt="Profile pic" />
           <h1>William Oliveira</h1>
           <p>Descrição breve</p>
+          <p>Random quote</p>
           <p>Redes sociais</p>
         </div>
       </aside>
