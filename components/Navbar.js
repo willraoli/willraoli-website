@@ -15,11 +15,11 @@ import NextLink from "next/link"
 
 const NAV_ITEMS = [
   {
-    name: "Portfolio",
+    name: "Portfólio",
     href: "http://github.com/willraoli",
   },
   {
-    name: "Get in touch",
+    name: "Contato",
     href: "mailto:william.christopher.96@gmail.com",
   },
 ]
