@@ -20,7 +20,7 @@ const NAV_ITEMS = [
   },
   {
     name: "Get in touch",
-    href: "/contact",
+    href: "mailto:william.christopher.96@gmail.com",
   },
 ]
 
