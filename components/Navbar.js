@@ -78,7 +78,7 @@ function Navbar() {
             </Text>
           </NextLink>
           <Flex ml={10}>
-            <DesktopNavigation />
+            <DesktopNavigation colorMode={colorMode} />
           </Flex>
         </Flex>
         <Stack
