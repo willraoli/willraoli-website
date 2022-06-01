@@ -16,7 +16,7 @@ import NextLink from "next/link"
 const NAV_ITEMS = [
   {
     name: "Portfolio",
-    href: "/portfolio",
+    href: "http://github.com/willraoli",
   },
   {
     name: "Get in touch",
