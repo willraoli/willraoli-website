@@ -24,7 +24,7 @@ const NAV_ITEMS = [
   },
 ]
 
-function DesktopNavigation() {
+function DesktopNavigation({ colorMode }) {
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((item) => (
@@ -34,7 +34,7 @@ function DesktopNavigation() {
               rounded={"md"}
               py={2}
               px={2}
-              _hover={{ textDecoration: "none", bg: useColorModeValue("gray.200", "gray.700") }}
+              _hover={{ textDecoration: "none", bg: colorMode === "light" ? "gray.200" : "gray.700" }}
             >
               {item.name}
             </Link>
