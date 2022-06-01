@@ -6,10 +6,11 @@ export default function Home() {
     "pt-BR": "Desenvolvedor web focado em tecnologias modernas, otimização de SEO e clean code.",
     "en-US": "Full-Stack Developer, focused on modern technologies and with focus on software development.",
   }
+  
   return (
     <>
       <Head>
-        <title>willraoli@home</title>
+        <title>willraoli</title>
         <meta name="description" content="willraoli's website" />
       </Head>
       <Stack
