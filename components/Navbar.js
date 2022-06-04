@@ -9,6 +9,7 @@ import {
   Button,
   useColorMode,
   Switch,
+  useMediaQuery
 } from "@chakra-ui/react"
 import { SunIcon, MoonIcon } from "@chakra-ui/icons"
 import NextLink from "next/link"
@@ -34,7 +35,10 @@ function DesktopNavigation({ colorMode }) {
               rounded={"md"}
               py={2}
               px={2}
-              _hover={{ textDecoration: "none", bg: colorMode === "light" ? "gray.200" : "gray.700" }}
+              _hover={{
+                textDecoration: "none",
+                bg: colorMode === "light" ? "gray.200" : "gray.700",
+              }}
             >
               {item.name}
             </Link>
@@ -47,6 +51,8 @@ function DesktopNavigation({ colorMode }) {
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode()
+  const [isLargerThan720] = useMediaQuery("(min-width: 720px)")
+
   return (
     <Box>
       <Flex
@@ -81,12 +87,10 @@ function Navbar() {
             <DesktopNavigation colorMode={colorMode} />
           </Flex>
         </Flex>
-        <Stack
-          align={"center"}
-          direction={"row"}
-          justify={{ base: "center", md: "end" }}
-        >
-          <Switch isChecked={colorMode === "dark"} onChange={toggleColorMode} />
+        <Stack align={"center"} direction={"row"} justify={{ base: "center", md: "end" }}>
+          {isLargerThan720 && (
+            <Switch isChecked={colorMode === "dark"} onChange={toggleColorMode} />
+          )}
           <Button onClick={toggleColorMode}>
             {colorMode === "light" ? <SunIcon /> : <MoonIcon />}
           </Button>
