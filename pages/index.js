@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="description" content="willraoli's website" />
       </Head>
       <Stack
-        marginTop={{ base: 16, md: 48 }}
+        marginTop={{ base: 16, md: 36 }}
         as={Box}
         align={"center"}
         textAlign={"center"}
